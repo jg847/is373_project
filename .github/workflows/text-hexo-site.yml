@@ -44,12 +44,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: noxic2cool/Playwright-Repo
-          path: Playwright-Repo
-        
-      # Run the Playwright tests against the generated Hexo site
-      - name: Run Playwright tests
-        working-directory: Playwright-Repo
-        run: npx playwright test --config=playwright/playwright.config.js
+          run: npx playwright test --config=playwright/playwright.config.js
 
   deploy:
     runs-on: ubuntu-latest
