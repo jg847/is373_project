@@ -42,7 +42,7 @@ jobs:
       # Install Playwright dependencies
       - name: Install Playwright dependencies
         working-directory: Playwright-Repo
-        run: npm install
+        run: npm ci
         
       # Install the Playwright browsers
       - name: Install Playwright browsers
