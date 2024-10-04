@@ -39,7 +39,7 @@ jobs:
           git clone https://github.com/noxic2cool/Playwright-Repo
           npm install
           
-      # Checkout Playwright repository
+      # Checkout Playwright repository + Run Test
       - name: Checkout Playwright Repository
         uses: actions/checkout@v4
         with:
