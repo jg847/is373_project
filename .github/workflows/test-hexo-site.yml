@@ -40,7 +40,7 @@ jobs:
           npm install
           
       # Checkout Playwright repository + Run Test
-      - name: Checkout Playwright Repository
+      - name: Checkout Playwright Repository and Run Test
         uses: actions/checkout@v4
         with:
           repository: noxic2cool/Playwright-Repo
