@@ -27,14 +27,18 @@ jobs:
         run: |
           npm install -g hexo-cli
           npm install
-          npx playwright install-deps
-          npx playwright install
 
       # Generate the static website
       - name: Generate Hexo site
         run: hexo generate
 
-      #Checkout Playwright repository
+      # Clone the PLaywright Repository
+      - name: Clone Playwright Test Repository
+        run: |
+          git clone https://github.com/noxic2cool/Playwright-Repo
+          npm install
+          
+      # Checkout Playwright repository
       - name: Checkout Playwright Repository
         uses: actions/checkout@v2
         with:
@@ -46,7 +50,6 @@ jobs:
         working-directory: Playwright-Repo
         run: |
             npm install
-            npm fund
             
       # Install the Playwright browsers
       - name: Install Playwright browsers
