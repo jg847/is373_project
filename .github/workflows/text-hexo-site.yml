@@ -48,7 +48,7 @@ jobs:
       # Run the Playwright tests against the generated Hexo site
       - name: Run Playwright tests
         with: 
-          repository: Playwright-Repo
+          repository: noxic2cool/Playwright-Repo
           run: npx playwright test --config=playwright/playwright.config.js
 
   deploy:
