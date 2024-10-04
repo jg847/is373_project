@@ -19,20 +19,21 @@ jobs:
 
       # Install Node.js and Hexo CLI
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Specify your Node.js version
+          node-version: '20' # Specify your Node.js version
+          cache: 'npm' 
 
       - name: Install Hexo and dependencies
         run: |
-          npm install -g hexo-cli
+          npm install hexo-cli -g
           npm install
 
       # Generate the static website
       - name: Generate Hexo site
         run: hexo generate
 
-      # Clone the PLaywright Repository
+      # Clone the Playwright Repository
       - name: Clone Playwright Test Repository
         run: |
           git clone https://github.com/noxic2cool/Playwright-Repo
@@ -46,8 +47,9 @@ jobs:
         
       # Run the Playwright tests against the generated Hexo site
       - name: Run Playwright tests
-        working-directory: Playwright-Repo
-        run: npx playwright test --config=playwright/playwright.config.js
+        with: 
+          repository: Playwright-Repo
+          run: npx playwright test --config=playwright/playwright.config.js
 
   deploy:
     runs-on: ubuntu-latest
