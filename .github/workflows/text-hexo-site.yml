@@ -25,9 +25,10 @@ jobs:
 
       - name: Install Hexo and dependencies
         run: |
-          npm install hexo-cli -g
+          npm install -g hexo-cli
           npm install
-          npx playwright install 
+          npx playwright install-deps
+          npx playwright install
 
       # Generate the static website
       - name: Generate Hexo site
