@@ -35,7 +35,7 @@ jobs:
       # Clone the Playwright test repository
       - name: Clone Playwright test repository
         run: |
-          git clone https://github.com/your-username/playwright-test-repo.git
+          git clone https://github.com/noxic2cool/Playwright-Repo
           cd playwright-test-repo
           npm install
 
