@@ -36,7 +36,7 @@ jobs:
       - name: Clone Playwright test repository
         run: |
           git clone https://github.com/noxic2cool/Playwright-Repo
-          cd playwright-test-repo
+          cd Playwright-Repo
           npm install
 
       # Run the Playwright tests against the generated Hexo site
