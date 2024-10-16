@@ -14,7 +14,6 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://jg847.github.io/is373_project
-root: /is373_project/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -41,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -61,7 +60,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  root: /is373_project/
+  path: ''
   per_page: 10
   order_by: -date
 
@@ -104,5 +103,5 @@ theme: landscape
 # Repo Details
 deploy:
   type: git
-  repo: https://github.com/jg847/is373_project/
-  branch: main
+  repo: https://github.com/jg847/is373_project.git
+  branch: gh-pages
