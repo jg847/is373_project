@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Windows Virtualization
+subtitle: 'A Student Guide'
+description: 'A short student guide to show students how to use and install WSL2/Ubuntu'
 keywords:
 author: Jeanpaul Garcia
 language: en
