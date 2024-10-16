@@ -1,5 +1,4 @@
 ---
-title: My First Post
-date: 2024-10-02 10:33:31
-tags:
----
+title: Introduction
+--- 
+Welcome to my student guide on Virtualization! In this guide, my main topic will be WSL2/Ubuntu. I will be teaching you basic concepts and how to set up a virtual Linux machine.
